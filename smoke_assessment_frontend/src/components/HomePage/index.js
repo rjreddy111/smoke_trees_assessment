@@ -44,7 +44,7 @@ class HomePage extends Component {
                 </thead>
                 <tbody>
                     {fetchedData.map((eachData)=> (
-                        <tr key = {eachData.address}>
+                        <tr key = {eachData.addressId}>
                             <td>{eachData.name}</td>
                             <td>{eachData.address}</td>
 

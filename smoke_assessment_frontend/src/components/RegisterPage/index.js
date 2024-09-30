@@ -9,7 +9,7 @@ class RegisterPage extends Component {
         name : "", 
         address: "",
         data: [],
-        refirect : false,
+        redirect : false,
         showError:false,
         errorMsg:""
     }

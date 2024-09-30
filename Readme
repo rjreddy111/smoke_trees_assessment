@@ -1,0 +1,10 @@
+steps to run the code :
+1. npm install  -> to install all the dependencies
+2. npm start  -> to start the server 
+
+github url : 
+url :https://github.com/rjreddy111/smoke_trees_assessment.git 
+
+deployed url 
+backendurl : https://smoke-trees-assessment.onrender.com/api for getting user name and address 
+backendurl : https://smoke-trees-assessment.onrender.com/api/register for adding user name and address to the database 

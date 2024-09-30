@@ -6,7 +6,7 @@ const router = express.Router()
 router.get("/", async(req,res)=> {
     const db = req.app.locals.db 
     
-    const getUserDb =await db.all(`SELECT * FROM Address  LEFT JOIN User ON User.id = Address.userId  `)
+    const getUserDb =await db.all(`SELECT Address.id as addressId, Address.address, User.id as userId, user.name  FROM Address  LEFT JOIN User ON User.id = Address.userId  `)
     res.status(200).json({data:getUserDb})
 })
 

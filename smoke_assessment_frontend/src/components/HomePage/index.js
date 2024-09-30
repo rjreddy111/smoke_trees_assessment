@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Navigate, redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import "./index.css"
 
 class HomePage extends Component {
@@ -44,7 +44,7 @@ class HomePage extends Component {
                 </thead>
                 <tbody>
                     {fetchedData.map((eachData)=> (
-                        <tr key = {eachData.id}>
+                        <tr key = {eachData.address}>
                             <td>{eachData.name}</td>
                             <td>{eachData.address}</td>
 
@@ -54,7 +54,7 @@ class HomePage extends Component {
 
                
             </table>
-            <button onClick={this.getAddButton}>Add more User and Address</button>
+            <button className="button-style" onClick={this.getAddButton}>Add more User and Address</button>
             </div>
         )
     }

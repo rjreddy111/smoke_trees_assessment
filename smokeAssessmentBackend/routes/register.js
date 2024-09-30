@@ -6,7 +6,7 @@ const router = express.Router()
 router.get("/", async(req,res)=> {
     const db = req.app.locals.db 
     
-    const getUserDb =await db.all(`SELECT * FROM Address NATURAL JOIN User `)
+    const getUserDb =await db.all(`SELECT * FROM Address  LEFT JOIN User ON User.id = Address.userId  `)
     res.status(200).json({data:getUserDb})
 })
 
@@ -15,7 +15,7 @@ router.post("/register", async(req,res)=> {
 
     const db = req.app.locals.db
     const {name,address} = req.body 
-    console.log(name)
+    console.log(name,address)
 
     if (!name || !address) {
         return res.status(400).json({error:"Name and Address should not be empty"})

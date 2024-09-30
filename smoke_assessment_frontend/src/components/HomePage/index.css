@@ -1,0 +1,19 @@
+.table-container {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 10px;
+    
+}
+thead {
+    background-color: rgb(115, 119, 118);
+}

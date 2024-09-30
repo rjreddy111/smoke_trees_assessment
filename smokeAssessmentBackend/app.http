@@ -2,7 +2,7 @@ POST http://localhost:5001/api/register
 Content-Type: application/json 
 
 {
-  "name": "Rahul Reddy",
+  "name": "Rahul",
   "address": "Bidar district, tq Humnabad"
 }
 
